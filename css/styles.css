@@ -1,0 +1,188 @@
+/* ===== Estils pàgina del joc ===== */
+
+.game-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-header {
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.game-header h1 {
+  margin: 0;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.game-top {
+  display: flex;
+ 
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.game-info {
+  
+}
+
+.game-info-row {
+  margin-bottom: 10px;
+}
+
+.game-info-row label {
+  
+  margin-right: 5px;
+}
+
+.secret-form {
+ 
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.secret-form input[type="password"],
+.secret-form input[type="text"] {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #888;
+}
+
+.eye-button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #888;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* Globus */
+.game-balloon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-balloon img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Paraula secreta */
+.game-word {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.word-placeholders {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.letter-slot {
+  font-size: 1.5rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Colors de resultat partida */
+.game-word.win-background {
+  background-color: #a5d6a7; /* verd */
+}
+
+.game-word.lose-background {
+  background-color: #ef9a9a; /* vermell */
+}
+
+/* Informació jugador */
+.game-stats {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+
+
+.game-stats p {
+  margin: 4px 0;
+}
+
+/* Botons de lletres */
+.game-letters {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.letters-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.letter-btn {
+  min-width: 32px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+/* Estats dels botons de lletres */
+.letter-enabled {
+  border-color: black;
+  color: black;
+}
+
+.letter-disabled {
+  border-color: red;
+  color: red;
+}
+.game-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;   /* vertically align */
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;   /* align row vertically */
+  gap: 20px;
+}
+
+.game-info-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0; /* remove bottom margin so it stays aligned */
+}
+
+.secret-form {
+  display: flex;          /* this was missing */
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}

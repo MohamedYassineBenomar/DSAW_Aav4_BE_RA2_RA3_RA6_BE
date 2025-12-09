@@ -1,0 +1,16 @@
+body{
+       background-color: #C0F49E;
+
+}
+
+h1{
+  display: block;
+  width: 100%;
+}
+.btn {
+ 
+    background-color: #B2F84A;
+    padding: 8px;
+    border-radius: 10px;    
+
+}

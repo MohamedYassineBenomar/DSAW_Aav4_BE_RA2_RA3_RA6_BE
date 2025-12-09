@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Joc - Endevina la paraula</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/jocstyle.css">
+
+</head>
+<body>
+  <main class="game-container">
+    <header class="game-header">
+
+  
+    </header>
+
+    <section class="game-top">
+          <div class="header-buttons">
+        <button id="backButton" class="btn"> < < Tornar</button>
+        <button id="instructionsButton" class="btn">Instruccions</button>
+      </div>
+      <div class="game-info">
+        <div class="game-info-row">
+          <label>Idioma :</label>
+          <span id="gameLanguage"></span>
+        </div>
+
+        <div class="secret-form">
+          <label for="secretWordInput">Paraula secreta:</label>
+          <input
+            type="password"
+            id="secretWordInput"
+            placeholder="Introdueix una paraula"
+          >
+          <button type="button" id="toggleSecretButton" class="eye-button">
+            👁️
+          </button>
+          <button type="button" id="startRoundButton" class="btn primary">
+            Començar partida
+          </button>
+        </div>
+      </div>
+
+    
+
+    </section>
+
+
+    <section class="game-stats">
+      <div>
+
+      
+      <h2>Informació jugador</h2>
+      <p><strong>Nom del jugador:</strong> <span id="playerNameLabel"></span></p>
+      <p><strong>Punts partida actual:</strong> <span id="currentPoints">0</span></p>
+      <p><strong>Total partides:</strong> <span id="totalGames">0</span></p>
+      <p>
+        <strong>Partides guanyades:</strong>
+        <span id="wins">0</span>
+        (<span id="winsPercent">0</span>%)
+      </p>
+      <p><strong>Partida amb més punts:</strong> <span id="bestGameInfo">-</span></p>
+      </div>
+      <div class="game-balloon">
+        <img id="balloonImage" src="img/globus0.png" alt="Estat del globus">
+      </div>
+    </section>
+
+    <section class="game-letters">
+      <h2>Lletres</h2>
+<div id="lettersContainer" class="letters-container" translate="no"></div>
+    </section>
+    
+  </main>
+
+  <script src="js/joc.js"></script>
+</body>
+</html>

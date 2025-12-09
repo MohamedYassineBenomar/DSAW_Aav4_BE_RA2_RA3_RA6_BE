@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Joc encertar paraula</title>
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/indexstyle.css">
+</head>
+<body>
+  <main class="main-container">
+    <h1 class="page-title">Joc encertar paraula</h1>
+
+    <section class="card">
+      <div class="form-row">
+        <label for="playerName">Introduïu el nom del jugador 1:</label>
+        <input type="text" id="playerName" name="playerName">
+      </div>
+
+      <h2 class="section-title">Puntuació més alta</h2>
+      <p id="bestScoreText">No hi ha puntuació actual</p>
+
+      <h2 class="section-title">Informació navegador</h2>
+      <p id="browserInfo"></p>
+
+      <h2 class="section-title">Idioma del joc</h2>
+      <p id="languageInfo"></p>
+
+      <h2 class="section-title">Informació URL</h2>
+      <p id="urlInfo"></p>
+
+      <div class="buttons-row">
+        <button id="startGameButton" class="btn primary">Començar partida</button>
+        <button id="clearScoreButton" class="btn danger">Borrar puntuació</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
